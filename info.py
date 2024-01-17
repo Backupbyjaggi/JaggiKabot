@@ -61,7 +61,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/BackupByJaggi')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Jaggi_movies')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/BackupByJaggi')
 
 # Bot settings
@@ -69,8 +69,8 @@ AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SPELL_CHECK = is_enabled(environ.get("SPELL_CHECK", "True"), True)
 SHORTLINK = is_enabled((environ.get('SHORTLINK', "True")), True)
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600))
-AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
+DELETE_TIME = int(environ.get('DELETE_TIME', 600))
+AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 WELCOME = is_enabled((environ.get('WELCOME', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
